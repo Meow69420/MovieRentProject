@@ -1,0 +1,82 @@
+<div class="addEditContainer">
+  <div class="inputConatiner">
+    <form [formGroup]="addEditForm">
+      <mat-card class="matCard">
+        <mat-card-title>{{ inputButton }} FORM </mat-card-title>
+        <mat-form-field appearance="fill">
+          <!--  -->
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name" formControlName="title" required />
+        </mat-form-field>
+        <!--  -->
+        <mat-form-field appearance="fill">
+          <mat-label>Description</mat-label>
+          <textarea matInput type="text" formControlName="description" required>
+          </textarea>
+        </mat-form-field>
+        <!--  -->
+        <mat-form-field appearance="fill">
+          <mat-label>Genre</mat-label>
+          <input
+            matInput
+            placeholder="Action,Horror etc"
+            type="text"
+            formControlName="genre"
+            required
+          />
+        </mat-form-field>
+        <!--  -->
+        <mat-form-field appearance="fill">
+          <mat-label>Rating</mat-label>
+          <input
+            matInput
+            placeholder="1-10"
+            type="number"
+            formControlName="rating"
+            required
+          />
+        </mat-form-field>
+        <!--  -->
+        <mat-form-field appearance="fill">
+          <mat-label>Director</mat-label>
+          <input
+            matInput
+            placeholder="John doe"
+            type="text"
+            formControlName="director"
+            required
+          />
+        </mat-form-field>
+        <mat-error
+          *ngIf="
+            addEditForm.controls['director'].dirty &&
+            addEditForm.hasError('required', 'director')
+          "
+          >name required</mat-error
+        >
+        <mat-error *ngIf="addEditForm.hasError('pattern', 'director')"
+          >Please provide a valid name</mat-error
+        >
+        <br />
+        <div>
+          <button
+            (click)="onSubmit()"
+            mat-raised-button
+            style="margin: 1rem; background-color: green; color: white"
+          >
+            {{ inputButton }}
+          </button>
+          <button
+            (click)="closePopup()"
+            style="margin: 1rem"
+            mat-raised-button
+            color="warn"
+          >
+            CLOSE
+          </button>
+        </div>
+        <br />
+      </mat-card>
+    </form>
+  </div>
+</div>

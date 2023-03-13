@@ -1,0 +1,72 @@
+<div class="login">
+  <div class="loginContainer">
+    <form (ngSubmit)="OnSubmit()" [formGroup]="loginForm">
+      <div class="input-container">
+        <mat-card class="matCard">
+          <!-- label -->
+          <div class="loginLabel">Login</div>
+          <!-- email field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              formControlName="Email"
+              required
+            />
+            <mat-error
+              *ngIf="
+                loginForm.controls['Email'].dirty &&
+                loginForm.hasError('required', 'Email')
+              "
+              >Email required</mat-error
+            >
+            <mat-error *ngIf="loginForm.hasError('pattern', 'Email')"
+              >Please provide a valid email</mat-error
+            >
+          </mat-form-field>
+          <!-- password -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input
+              matInput
+              formControlName="Password"
+              required
+              [type]="hide ? 'password' : 'text'"
+            />
+            <mat-error
+              *ngIf="
+                loginForm.controls['Password'].dirty &&
+                loginForm.hasError('required', 'Password')
+              "
+              >Password required</mat-error
+            >
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="loginButtonContainer">
+            <button
+              type="submit"
+              class="loginButton"
+              mat-raised-button
+              color="primary"
+            >
+              Login
+            </button>
+            <span
+              >Don't have an account?
+              <u (click)="gotoRegisterButton()">Register</u></span
+            >
+          </div>
+        </mat-card>
+      </div>
+    </form>
+  </div>
+</div>

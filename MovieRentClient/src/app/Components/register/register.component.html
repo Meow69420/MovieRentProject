@@ -1,0 +1,92 @@
+<div class="Register">
+  <div class="RegisterContainer">
+    <form (ngSubmit)="OnSubmit()" [formGroup]="RegisterForm">
+      <div class="input-container">
+        <mat-card class="matCard">
+          <!-- label -->
+          <div class="RegisterLabel">Register</div>
+          <!-- name field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your name</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              formControlName="Name"
+              required
+            />
+            <mat-error
+              *ngIf="
+                RegisterForm.controls['Name'].dirty &&
+                RegisterForm.hasError('required', 'Name')
+              "
+              >name required</mat-error
+            >
+            <mat-error *ngIf="RegisterForm.hasError('pattern', 'Name')"
+              >Please provide a valid name</mat-error
+            >
+          </mat-form-field>
+          <!-- email field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              formControlName="Email"
+              required
+            />
+            <mat-error
+              *ngIf="
+                RegisterForm.controls['Email'].dirty &&
+                RegisterForm.hasError('required', 'Email')
+              "
+              >Email required</mat-error
+            >
+            <mat-error *ngIf="RegisterForm.hasError('pattern', 'Email')"
+              >Please provide a valid email</mat-error
+            >
+          </mat-form-field>
+          <!-- password -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input
+              matInput
+              formControlName="Password"
+              required
+              [type]="hide ? 'password' : 'text'"
+            />
+            <mat-error
+              *ngIf="
+                RegisterForm.controls['Password'].dirty &&
+                RegisterForm.hasError('required', 'Password')
+              "
+              >Password required</mat-error
+            >
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="RegisterButtonContainer">
+            <button
+              type="submit"
+              class="RegisterButton"
+              mat-raised-button
+              color="primary"
+            >
+              Register
+            </button>
+            <span
+              >Already have an account?
+              <u (click)="gotoLoginButton()">Login</u></span
+            >
+          </div>
+        </mat-card>
+      </div>
+    </form>
+  </div>
+</div>

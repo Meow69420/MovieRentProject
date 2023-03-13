@@ -1,0 +1,122 @@
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:35:48
+Error Message: User not found! User Email = admin@email.com is not present in Database
+===========End============= 13/03/2023 16:35:48
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:35:48
+Error Message: Login not Successfull for Email : admin@email.com
+===========End============= 13/03/2023 16:35:48
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:35:49
+Error Message: User not found! User Email = admin@email.com is not present in Database
+===========End============= 13/03/2023 16:35:49
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:35:49
+Error Message: Login not Successfull for Email : admin@email.com
+===========End============= 13/03/2023 16:35:49
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:36:41
+Error Message: User not found! User Email = admin@gmail.com is not present in Database
+===========End============= 13/03/2023 16:36:41
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:36:41
+Error Message: Login not Successfull for Email : admin@gmail.com
+===========End============= 13/03/2023 16:36:41
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:36:52
+Error Message: User not found! User Email = admin@gmail.com is not present in Database
+===========End============= 13/03/2023 16:36:52
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:36:52
+Error Message: Login not Successfull for Email : admin@gmail.com
+===========End============= 13/03/2023 16:36:52
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:38:17
+Error Message: User not found! User Email = admin@gmail.com is not present in Database
+===========End============= 13/03/2023 16:38:17
+=============Error Logging ===========
+===========Start============= 13/03/2023 16:38:17
+Error Message: Login not Successfull for Email : admin@gmail.com
+===========End============= 13/03/2023 16:38:17
+=============Error Logging ===========
+===========Start============= 13/03/2023 19:35:00
+Error Message: Object reference not set to an instance of an object.
+Stack Trace:    at MovieRent.Web.Services.MoviesService.UpdateMovie(UpdateMoviesDTO Movie) in C:\Users\Ryiu\Downloads\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 94
+===========End============= 13/03/2023 19:35:00
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:39
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:40
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:41
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:41
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:41
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:41
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:42
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:42
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:43
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:43
+=============Error Logging ===========
+===========Start============= 13-03-2023 20:53:43
+Error Message: Value cannot be null. (Parameter 'entity')
+Stack Trace:    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MovieRent.Web.Services.MoviesService.DeleteMovie(Int32 id) in C:\Users\souna\OneDrive\Desktop\New folder\Project\Sayan project\MovieRent-master\MovieRent.Web\Services\MoviesService.cs:line 39
+===========End============= 13-03-2023 20:53:43

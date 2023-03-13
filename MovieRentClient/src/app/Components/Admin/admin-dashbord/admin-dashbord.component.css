@@ -1,0 +1,14 @@
+.adminContainer{
+    padding: 2rem;
+    max-width: 100vw;
+}
+.tableContainer{
+    display: block;
+    width: 90%;
+    overflow-x: scroll;
+    padding: 1rem;
+    max-width: 90vw;
+}
+.mat-elevation-z8 demo-table{
+    flex-wrap: wrap;
+}
